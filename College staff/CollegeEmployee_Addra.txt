@@ -1,0 +1,26 @@
+// File name CollegeEmployee_Addra.java
+// Written by Welton Addra
+// Written on February 3rd 2022
+// Instructor: Udeme Aaron
+import javax.swing.*;
+public class CollegeEmployee_Addra extends Person_Addra {
+    int socialSecurity,annualSal;2
+    String departmentName;
+
+
+    @Override
+    public void setFields() {
+        departmentName = JOptionPane.showInputDialog(f,"Enter the department name");
+
+        unparssedString = JOptionPane.showInputDialog(f,"Enter social security number ");
+        socialSecurity = Integer.parseInt(unparssedString);
+
+        unparssedString = JOptionPane.showInputDialog(f,"Enter the annual salary ");
+        annualSal = Integer.parseInt(unparssedString);
+    }
+
+    @Override
+    public void display() {
+        System.out.print("Social security : " + socialSecurity + "   Annual salary :" + annualSal + "     Department name : " + departmentName);
+    }
+}
